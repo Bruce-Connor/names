@@ -1313,5 +1313,14 @@ If STAR is non-nil, parse as a `let*'."
             (mapcar 'names-convert-form (cdr x))))
     (cddr (cdr form)))))
 
+(defun names--convert-rx-define (form &rest args)
+  (apply (if (cdddr form)
+             #'names--convert-defun
+           #'names--convert-defvar)
+         form
+         args))
+(defalias 'names--convert-rx-let 'names--convert-let)
+(defalias 'names--convert-rx-let-eval 'names--convert-let)
+
 (provide 'names)
 ;;; names.el ends here

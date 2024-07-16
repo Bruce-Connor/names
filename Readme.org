@@ -83,7 +83,7 @@ lack of knowledge by the reader, =names.el= is also acceptable.
 ** Why a namespace package?
 Plain and simple: Emacs doesn't have namespaces, and it needs them.
 
-Nic Ferrier has a [[http://nic.ferrier.me.uk/blog/2013_06/adding-namespaces-to-elisp][great essay on the subject]], and you might want to
+Nic Ferrier has a [[https://web.archive.org/web/20221017081754/http://nic.ferrier.me.uk/blog/2013_06/adding-namespaces-to-elisp][great essay on the subject]], and you might want to
 read [[https://lists.gnu.org/archive/html/emacs-devel/2014-12/msg00772.html][an opposing opinion]] as well. Note that *Names* is very different
 from the solution he proposes, but it does solve the problem he had
 with other alternatives which left the debugger unusable.
